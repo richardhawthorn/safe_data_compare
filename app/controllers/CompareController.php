@@ -103,6 +103,8 @@ class CompareController extends BaseController {
 
 	public function postUpload($unique){
 
+		DB::disableQueryLog();
+
 		$compare = Compare::where('unique', $unique)->first();
 
 		if ((!$compare) || (!Session::get('owner'))){
