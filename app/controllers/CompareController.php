@@ -49,6 +49,9 @@ class CompareController extends BaseController {
 
 	public function getView($unique){
 
+		//disable php timeout
+		set_time_limit(0);
+
 		$compare = Compare::where('unique', $unique)->first();
 
 		if (!$compare){
@@ -103,7 +106,9 @@ class CompareController extends BaseController {
 
 	public function postUpload($unique){
 
+		//disable php timeout and db query log
 		DB::disableQueryLog();
+		set_time_limit(0);
 
 		$compare = Compare::where('unique', $unique)->first();
 
