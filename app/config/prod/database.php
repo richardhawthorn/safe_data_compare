@@ -23,9 +23,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'data_compare',
-			'username'  => 'root',
-			'password'  => 'root',
+			'database'  => 'compare',
+			'username'  => '700321df9976', /* Yes, you can see the database details for my test server */
+			'password'  => 'fcce1917ec3c3262',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

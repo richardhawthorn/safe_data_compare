@@ -13,5 +13,12 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return View::make('pages.index.index');
 });
+
+Route::get('about', function()
+{
+	return View::make('pages.about.index');
+});
+
+Route::controller('compare', 'CompareController');

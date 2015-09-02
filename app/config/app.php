@@ -122,6 +122,8 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 
+		'Rocketeer\RocketeerServiceProvider',
+
 	),
 
 	/*
@@ -188,6 +190,11 @@ return array(
 		'URL'               => 'Illuminate\Support\Facades\URL',
 		'Validator'         => 'Illuminate\Support\Facades\Validator',
 		'View'              => 'Illuminate\Support\Facades\View',
+
+		'Lexer' => 'Goodby\CSV\Import\Standard\Lexer',
+		'Interpreter' => 'Goodby\CSV\Import\Standard\Interpreter',
+		'LexerConfig' => 'Goodby\CSV\Import\Standard\LexerConfig',
+	 	'Rocketeer' => 'Rocketeer\Facades\Rocketeer',
 
 	),
 
