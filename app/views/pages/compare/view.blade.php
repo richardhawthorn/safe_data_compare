@@ -26,9 +26,8 @@
       <h2>{{ $compare->name }}</h2>
 
       <h4>Uploaders: {{ $total_uploaders }}</h4>
-      <h4>Your items: {{ $owner_uploads }}</h4>
-      <h4>Other items: {{ $other_uploads }}</h4>
-      <h4>Total items: {{ $total_uploads }}</h4>
+      <h4>Your data set: {{ $owner_uploads }}</h4>
+      <h4>Their data set: {{ $other_uploads }}</h4>
       <h4>Matches: {{ $matches }}</h4>
 
     </div>
